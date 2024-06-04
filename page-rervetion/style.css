@@ -1,0 +1,101 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: initial;
+}
+:root 
+{
+  --dl-color-theme-accent1: #FFFFFF;
+  --dl-color-theme-accent2: #F5D1B0;
+  --dl-color-theme-primary1: #BF4408;
+  --dl-color-theme-primary2: #E65103;
+  --dl-color-theme-secondary1: #FFFFFF;
+  --dl-color-theme-secondary2: #FBF1EB;
+  --dl-color-theme-neutral-dark: #191818;
+  --dl-color-theme-neutral-light: #FBFAF9;
+}
+header
+{
+  height: 9vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  & .logo
+  {
+    width: 5%;
+  }
+  & nav 
+  {
+    & ul li
+    {
+      display: inline;
+      & a 
+      {
+        font-size: 1.2em;
+        margin-left: 20px;
+        position: relative;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: var(--dl-color-theme-neutral-dark);
+      }
+      & a::after
+      {
+        content: "";
+        position: absolute;
+        height: 3px;
+        border-radius: 20px;
+        width: 0;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--dl-color-theme-neutral-dark);
+        transition: 200ms;
+      }
+      & a:hover::after
+      {
+        width: 100%;
+      }
+    }
+  }
+  & button 
+  {
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--dl-color-theme-accent1);
+    border: 1px solid var(--dl-color-theme-neutral-dark);
+    font-size: .9em;
+    font-weight: 500;
+    transition: 200ms;
+    cursor: pointer;
+  }
+  & button:hover
+  {
+    background-color: var(--dl-color-theme-neutral-dark);
+    color:white;
+  }
+}
+.main-1
+{
+  height: 100vh;
+  width: 100%;
+  background: url(../img/img/bg-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter:saturate(200%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  & h1 
+  {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--dl-color-theme-accent1) ;
+  }
+}
