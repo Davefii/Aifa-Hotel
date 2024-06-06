@@ -45,39 +45,39 @@ header
       display: inline;
       & .dropdown-content
       {
-        position: absolute;
-        display: none;
-        width: 150px;
-        padding: 20px;
-        line-height: 30px;
-        background-color: var(--dl-color-theme-accent1);
-        color: var(--dl-color-theme-neutral-dark);
-        z-index: 100;
-        & a 
-        {
-          font-size: .9em;
-          margin-left: 10px;
-          position: relative;
-          text-decoration: none;
-          text-transform: capitalize;
-          color: var(--dl-color-theme-neutral-dark);
-        }
-        & a::after
-        {
-          content: "";
           position: absolute;
-          height: 1px;
-          border-radius: 20px;
-          width: 0;
-          bottom: -5px;
-          left: 0;
-          background-color: var(--dl-color-theme-neutral-dark);
-          transition: 200ms;
-        }
-        & a:hover::after
-        {
-          width: 100%;
-        }
+          display: none;
+          width: 150px;
+          padding: 20px;
+          line-height: 30px;
+          background-color: var(--dl-color-theme-accent1);
+          color: var(--dl-color-theme-neutral-dark);
+          z-index: 100;
+          & a 
+          {
+            font-size: .9em;
+            margin-left: 10px;
+            position: relative;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: var(--dl-color-theme-neutral-dark);
+          }
+          & a::after
+          {
+            content: "";
+            position: absolute;
+            height: 1px;
+            border-radius: 20px;
+            width: 0;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--dl-color-theme-neutral-dark);
+            transition: 200ms;
+          }
+          & a:hover::after
+          {
+            width: 100%;
+          }
       }
       &:hover .dropdown-content
       {
